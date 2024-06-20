@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/backround_rounded"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="164dp"
+            android:layout_height="145dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/product_image" />
+
+        <TextView
+            android:id="@+id/productNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Produk"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/productImageView"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/sizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size 42"
+            android:layout_toRightOf="@+id/productImageView"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/productNameTextView"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/productPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga Produk"
+            android:layout_toRightOf="@+id/productImageView"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/sizeTextView"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/productRatingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating Produk"
+            android:layout_toRightOf="@+id/productPriceTextView"
+            android:layout_below="@+id/productPriceTextView"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
